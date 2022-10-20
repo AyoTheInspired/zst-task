@@ -1,14 +1,13 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import { HeadTag } from "../components";
-import styles from "../styles/Home.module.css";
+import { HeadTag, Navbar } from "../components";
 
 const Home: NextPage = () => {
 	return (
 		<>
 			<HeadTag />
-			<main>
+
+			<Navbar />
+			<main className="w-full lg:w-[95%] mx-auto">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magni
 				reiciendis natus. Eligendi doloribus consequatur ad quibusdam temporibus
 				praesentium sapiente nisi libero maiores fugiat. Error nam molestias

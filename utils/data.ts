@@ -9,6 +9,8 @@ export const dummy: LocationType[] = [
 		category: "omg!",
 	},
 
+	// src="https://links.papareact.com/qd3"
+
 	{
 		images: ["/assets/images/img2.webp", "/assets/images/img12.webp"],
 		title: "5 BR detached",

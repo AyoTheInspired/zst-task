@@ -5,3 +5,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	p {
+		@apply mb-0;
+	}
+}
+
+@layer components {
+	.mid-item {
+		@apply text-sm text-black text-opacity-40  whitespace-nowrap;
+	}
+
+	.mid-item-bold {
+		@apply mb-0 text-sm font-medium  whitespace-nowrap;
+	}
+
+	.pry-bg {
+		@apply bg-[#FF385C];
+	}
+
+	.flexed {
+		@apply flex items-center justify-center;
+	}
+
+	.curp {
+		@apply cursor-pointer;
+	}
+}
