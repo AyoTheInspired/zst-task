@@ -1,1 +1,1 @@
-export { default as HeadTag } from "./utils/HeadTag";
+export { default as HeadTag } from "./misc/HeadTag";
