@@ -1,20 +1,15 @@
 import type { NextPage } from "next";
-import { HeadTag, Navbar } from "../components";
+import { useState } from "react";
+import { Header, HeadTag, PlacesSection } from "../components";
 
 const Home: NextPage = () => {
+	const [category, setCategory] = useState("");
+
 	return (
 		<>
 			<HeadTag />
-
-			<Navbar />
-			<main className="w-full lg:w-[95%] mx-auto">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magni
-				reiciendis natus. Eligendi doloribus consequatur ad quibusdam temporibus
-				praesentium sapiente nisi libero maiores fugiat. Error nam molestias
-				alias quidem perferendis dolor, maiores tempore ullam, repellat
-				reprehenderit odio eligendi. Cupiditate sapiente doloribus suscipit
-				voluptates dolorum inventore iusto ex facilis veritatis beatae.
-			</main>
+			<Header category={category} setCategory={setCategory} />
+			<PlacesSection category={category} />
 		</>
 	);
 };

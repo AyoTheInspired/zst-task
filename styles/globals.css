@@ -21,6 +21,10 @@
 		@apply mb-0 text-sm font-medium  whitespace-nowrap;
 	}
 
+	.ovs {
+		@apply overflow-x-scroll scrollbar-hide;
+	}
+
 	.pry-bg {
 		@apply bg-[#FF385C];
 	}
@@ -29,7 +33,15 @@
 		@apply flex items-center justify-center;
 	}
 
+	.flex-btw {
+		@apply flex items-center justify-between;
+	}
+
 	.curp {
 		@apply cursor-pointer;
+	}
+
+	.side-pad {
+		@apply px-4 lg:px-14;
 	}
 }
