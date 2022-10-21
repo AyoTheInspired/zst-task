@@ -8,8 +8,8 @@ type Props = {
 
 function CategoryFilters({ category, setCategory }: Props) {
 	return (
-		<div className="side-pad flex items-center">
-			<div className="flex items-center ovs h-24 sticky top-[75px] bg-white shadow-xs z-10">
+		<div className="side-pad flex items-center sticky top-[75px] h-24  bg-white shadow-xs z-10">
+			<div className="flex items-center ovs">
 				{categories.map(({ imgPath, title }: FilterItem) => (
 					<div
 						onClick={() => setCategory(title)}
@@ -17,7 +17,7 @@ function CategoryFilters({ category, setCategory }: Props) {
 						className="flexed flex-col mr-8 group curp transition-all">
 						<img width={25} src={imgPath} alt={title} />
 						<p
-							className={`capitalize whitespace-nowrap text-xs mt-1 pb-2 group-hover:border-b-2  transition-all ${
+							className={`capitalize whitespace-nowrap text-xs font-light mt-1 pb-2 group-hover:border-b-2  transition-all ${
 								category === title
 									? "font-semibold border-b-2 border-gray-600 cursor-default"
 									: "group-hover:border-gray-300"

@@ -44,4 +44,20 @@
 	.side-pad {
 		@apply px-4 lg:px-14;
 	}
+
+	.mob-item-wrap {
+		@apply curp flexed flex-col;
+	}
+
+	.mob-item-text {
+		@apply text-[10px] mt-1;
+	}
+
+	.mob-item-icon {
+		@apply text-xl;
+	}
+
+	a.footer-link {
+		@apply cursor-pointer hover:underline transition-transform underline-offset-2;
+	}
 }

@@ -32,7 +32,7 @@ const PlacesSection = ({ category }: Props) => {
 	};
 
 	return (
-		<div className="w-full flex items-center side-pad flex-wrap py-6">
+		<div className="w-full min-h-screen flex items-center px-4 lg:px-[44px] flex-wrap py-6">
 			{filteredItems?.length == 0 ? (
 				<div className="mx-auto py-5 flexed">
 					<p>
