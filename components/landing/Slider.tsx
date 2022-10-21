@@ -38,6 +38,7 @@ function Slider({ images }: Props) {
 			}>
 			{images?.map((item: string) => (
 				<img
+					key={item}
 					onMouseEnter={() => setIsHovered(!isHovered)}
 					src={item}
 					className="object-fill h-[230px] w-full rounded-lg "

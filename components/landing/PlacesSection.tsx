@@ -55,7 +55,9 @@ const PlacesSection = ({ category }: Props) => {
 						isLiked,
 						rating,
 					}: LocationType) => (
-						<div className="w-full md:w-[45%] lg:w-[23%] mx-auto mb-10 relative curp">
+						<div
+							key={category}
+							className="w-full md:w-[45%] lg:w-[23%] mx-auto mb-10 relative curp">
 							<div className="absolute top-3 right-4 text-sm h-7 w-7 bg-gray-200 flexed rounded-full">
 								<AiFillHeart
 									onClick={() => toggleLikes(id)}
