@@ -154,6 +154,28 @@ const places: LocationType[] = [
 		rating: "5.0",
 		category: "lake",
 	},
+	{
+		images: ["/assets/images/img15.jpeg", "/assets/images/img5.jpeg"],
+		title: "Comfy condo in Lekki",
+		host: "Ayo Abimbola",
+		availableDate: "Jan 5 - 10",
+		cost: 50,
+		isLiked: false,
+		id: Math.random(),
+		rating: "5.0",
+		category: "luxe",
+	},
+	{
+		images: ["/assets/images/img16.jpg", "/assets/images/img6.webp"],
+		title: "Comfy condo in Lekki",
+		host: "Ayo Abimbola",
+		availableDate: "Jan 5 - 10",
+		cost: 50,
+		isLiked: false,
+		id: Math.random(),
+		rating: "5.0",
+		category: "tiny homes",
+	},
 ];
 
 const categories: FilterItem[] = [

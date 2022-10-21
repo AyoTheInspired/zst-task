@@ -63,7 +63,7 @@ const PlacesSection = ({ category }: Props) => {
 							</div>
 							<img
 								src={images[0]}
-								className="object-fill h-[200px] w-full rounded-lg "
+								className="object-fill h-[230px] w-full rounded-lg "
 								alt={title}
 							/>
 							<div className="flex-btw text-sm mt-2">
