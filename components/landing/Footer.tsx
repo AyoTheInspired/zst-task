@@ -6,7 +6,7 @@ import { FaRegUserCircle, FaSearch } from "react-icons/fa";
 
 function Footer() {
 	return (
-		<footer className="w-full sticky bottom-0 bg-gray-100 min-h-12 py-4 side-pad flex items-center">
+		<footer className="w-full sticky bottom-0 bg-gray-100 min-h-12 py-4 side-pad flex items-center z-20">
 			<div className="w-full hidden lg:inline-flex items-center justify-between">
 				<div className="text-sm flex items-center font-light">
 					<AiOutlineCopyright />
@@ -40,7 +40,7 @@ function Footer() {
 			<div className="lg:hidden flexed space-x-10 mx-auto">
 				<div className="mob-item-wrap">
 					<FaSearch className="mob-item-icon text-[#FF385C]" />
-					<a className="mob-item-text">Explore</a>
+					<a className="mob-item-text font-semibold">Explore</a>
 				</div>
 				<div className="mob-item-wrap">
 					<BsHeart className="mob-item-icon text-gray-300" />

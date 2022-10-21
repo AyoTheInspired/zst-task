@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { places } from "../../utils/data";
 import { AiFillHeart, AiTwotoneStar } from "react-icons/ai";
+import Slider from "./Slider";
 
 type Props = {
 	category: string;
@@ -32,7 +33,7 @@ const PlacesSection = ({ category }: Props) => {
 	};
 
 	return (
-		<div className="w-full min-h-screen flex items-center px-4 lg:px-[44px] flex-wrap py-6">
+		<div className="w-full min-h-screen flex items-center px-4 lg:px-[44px] flex-wrap py-6 mt-3">
 			{filteredItems?.length == 0 ? (
 				<div className="mx-auto py-5 flexed">
 					<p>
@@ -54,18 +55,14 @@ const PlacesSection = ({ category }: Props) => {
 						isLiked,
 						rating,
 					}: LocationType) => (
-						<div className="w-full md:w-[45%] lg:w-[23%] mx-auto mb-10 relative">
+						<div className="w-full md:w-[45%] lg:w-[23%] mx-auto mb-10 relative curp">
 							<div className="absolute top-3 right-4 text-sm h-7 w-7 bg-gray-200 flexed rounded-full">
 								<AiFillHeart
 									onClick={() => toggleLikes(id)}
 									className={`curp text-lg ${isLiked ? "text-red-500" : ""}`}
 								/>
 							</div>
-							<img
-								src={images[0]}
-								className="object-fill h-[230px] w-full rounded-lg "
-								alt={title}
-							/>
+							<Slider images={images} />
 							<div className="flex-btw text-sm mt-2">
 								<p className="font-semibold tracking-wide capitalize">
 									{title}
