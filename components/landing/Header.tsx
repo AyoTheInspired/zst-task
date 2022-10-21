@@ -15,6 +15,7 @@ function Header({ category, setCategory }: Props) {
 				<div className="flex items-center justify-between h-20">
 					<div>
 						<Image
+							alt="airbnb"
 							src="https://links.papareact.com/qd3"
 							width={120}
 							height={50}

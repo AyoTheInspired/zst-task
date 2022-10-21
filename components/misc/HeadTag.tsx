@@ -5,7 +5,7 @@ function HeadTag() {
 		<Head>
 			<title>AirBnb</title>
 			<meta name="description" content="Submitted by Ayo Abimbola" />
-			<link rel="icon" href="/favicon.ico" />
+			<link rel="icon" href="/favicon.png" />
 		</Head>
 	);
 }
